@@ -1,0 +1,578 @@
+================================================================================
+BUSINESS RULES ENGINE - SAMPLE OUTPUT
+================================================================================
+
+This document contains a complete sample run of the Business Rules Engine
+application demonstrating all features and functionality.
+
+================================================================================
+RUN 1: CUSTOMER PROFILE AND FINANCIAL SUMMARY
+================================================================================
+
+============================================================
+WELCOME TO BUSINESS RULES ENGINE
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 1
+
+============================================================
+FEATURE 1: CUSTOMER PROFILE AND FINANCIAL SUMMARY
+============================================================
+
+------------------------------------------------------------
+ENTER CUSTOMER DETAILS
+------------------------------------------------------------
+Enter customer name: Rajesh Kumar
+Enter age (years): 35
+Enter city: Mumbai
+Available cities: Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Kolkata, Pune, 
+Ahmedabad, Jaipur, Lucknow, Chandigarh, Surat, Indore, Bhopal, Visakhapatnam
+Enter city: Mumbai
+Enter monthly income (₹): 85000
+Enter monthly expenses (₹): 52000
+Enter existing EMI amount (₹): 18000
+Enter credit score (300-900): 750
+Available segments: Standard, Premium, Enterprise
+Enter customer segment (Standard/Premium/Enterprise): Premium
+
+--- CUSTOMER DETAILS ---
+Name: Rajesh Kumar
+Age: 35
+City: Mumbai
+Monthly Income: ₹85,000.00
+Monthly Expenses: ₹52,000.00
+Existing EMI: ₹18,000.00
+Credit Score: 750
+Customer Segment: Premium
+
+--- FINANCIAL SUMMARY ---
+Monthly Savings: ₹33,000.00
+Savings Percentage: 38.82%
+EMI-to-Income Ratio: 21.18%
+Risk Category: Low Risk
+Customer Value Category: High Value
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 2
+
+================================================================================
+RUN 2: PRODUCT BILLING CALCULATOR
+================================================================================
+
+============================================================
+FEATURE 2: PRODUCT BILLING CALCULATOR
+============================================================
+
+------------------------------------------------------------
+ENTER PRODUCT DETAILS
+------------------------------------------------------------
+Enter product name: Gaming Laptop
+Available categories: Electronics, Clothing, Food, Home, Sports, Books, Other
+Enter product category: Electronics
+Enter quantity (units): 2
+Enter unit price (₹): 75000
+Enter discount percentage (0-100): 8
+Enter GST percentage: 18
+Enter delivery charge (₹): 250
+
+--- PRODUCT DETAILS ---
+Product Name: Gaming Laptop
+Category: Electronics
+Quantity: 2
+Unit Price: ₹75,000.00
+
+--- BILLING CALCULATION ---
+Gross Amount: ₹150,000.00
+Discount (8%): ₹12,000.00
+Amount After Discount: ₹138,000.00
+GST (18%): ₹24,840.00
+Delivery Charge: ₹0.00
+Final Payable Amount: ₹162,840.00
+
+[NOTE: Delivery charge waived because amount before delivery (₹162,840.00) 
+exceeds ₹5,000 threshold]
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 3
+
+================================================================================
+RUN 3: LOAN ELIGIBILITY DECISION
+================================================================================
+
+============================================================
+FEATURE 3: LOAN ELIGIBILITY DECISION
+============================================================
+
+[Using previously entered customer: Rajesh Kumar]
+
+Enter requested loan amount (₹): 1000000
+
+--- LOAN ELIGIBILITY RESULT ---
+Customer: Rajesh Kumar
+Requested Loan Amount: ₹1,000,000.00
+Decision: Approved
+Reason: All eligibility criteria met. Customer qualifies for the loan.
+
+ELIGIBILITY CHECK DETAILS:
+- Age Check: 35 is within 21-65 range ✓
+- Income Check: ₹85,000 >= ₹25,000 ✓
+- EMI-to-Income Check: 21.18% < 60% ✓
+- Credit Score Check: 750 >= 650 ✓
+- Savings Percentage Check: 38.82% >= 10% ✓
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 4
+
+================================================================================
+RUN 4: CAMPAIGN ELIGIBILITY CHECKER
+================================================================================
+
+============================================================
+FEATURE 4: CAMPAIGN ELIGIBILITY CHECKER
+============================================================
+
+[Using previously entered customer: Rajesh Kumar]
+
+--- CAMPAIGN ASSIGNMENT ---
+Customer: Rajesh Kumar
+Segment: Premium
+City: Mumbai
+Savings Percentage: 38.82%
+Customer Value: High Value
+
+Assigned Campaign: Premium Upsell Campaign
+Reason: Premium segment with high savings (38.82%) and high value profile.
+
+CAMPAIGN ANALYSIS:
+- Segment: Premium ✓
+- Savings: 38.82% > 30% ✓
+- Value Category: High Value ✓
+→ Matches Premium Upsell Campaign criteria
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 1
+
+================================================================================
+RUN 5: ANOTHER CUSTOMER PROFILE (DIFFERENT SCENARIO)
+================================================================================
+
+============================================================
+FEATURE 1: CUSTOMER PROFILE AND FINANCIAL SUMMARY
+============================================================
+
+------------------------------------------------------------
+ENTER CUSTOMER DETAILS
+------------------------------------------------------------
+Enter customer name: Priya Sharma
+Enter age (years): 28
+Enter city: Bangalore
+Enter monthly income (₹): 45000
+Enter monthly expenses (₹): 38000
+Enter existing EMI amount (₹): 9000
+Enter credit score (300-900): 620
+Available segments: Standard, Premium, Enterprise
+Enter customer segment (Standard/Premium/Enterprise): Standard
+
+--- CUSTOMER DETAILS ---
+Name: Priya Sharma
+Age: 28
+City: Bangalore
+Monthly Income: ₹45,000.00
+Monthly Expenses: ₹38,000.00
+Existing EMI: ₹9,000.00
+Credit Score: 620
+Customer Segment: Standard
+
+--- FINANCIAL SUMMARY ---
+Monthly Savings: ₹7,000.00
+Savings Percentage: 15.56%
+EMI-to-Income Ratio: 20.00%
+Risk Category: Medium Risk
+Customer Value Category: Medium Value
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 3
+
+================================================================================
+RUN 6: LOAN ELIGIBILITY FOR SECOND CUSTOMER
+================================================================================
+
+============================================================
+FEATURE 3: LOAN ELIGIBILITY DECISION
+============================================================
+
+[Using customer: Priya Sharma with Medium Risk profile]
+
+Enter requested loan amount (₹): 500000
+
+--- LOAN ELIGIBILITY RESULT ---
+Customer: Priya Sharma
+Requested Loan Amount: ₹500,000.00
+Decision: Manual Review Required
+Reason: Credit score 620 is acceptable but below ideal threshold. Manual 
+verification needed.
+
+ELIGIBILITY CHECK DETAILS:
+- Age Check: 28 is within 21-65 range ✓
+- Income Check: ₹45,000 >= ₹25,000 ✓
+- EMI-to-Income Check: 20.00% < 60% ✓
+- Credit Score Check: 620 is between 600-650 (MANUAL REVIEW) ⚠
+- Savings Percentage Check: 15.56% >= 10% ✓
+
+Recommendation: Manual review recommended. Customer has good profile but 
+credit score needs verification.
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 4
+
+================================================================================
+RUN 7: CAMPAIGN ELIGIBILITY FOR SECOND CUSTOMER
+================================================================================
+
+============================================================
+FEATURE 4: CAMPAIGN ELIGIBILITY CHECKER
+============================================================
+
+[Using customer: Priya Sharma with Medium profile]
+
+--- CAMPAIGN ASSIGNMENT ---
+Customer: Priya Sharma
+Segment: Standard
+City: Bangalore
+Savings Percentage: 15.56%
+Customer Value: Medium Value
+
+Assigned Campaign: Loan Offer Campaign
+Reason: Good credit profile (620) with moderate savings and low-medium risk.
+
+CAMPAIGN ANALYSIS:
+- Segment: Standard ✓
+- Savings: 15.56% (within 15-30% range) ✓
+- Risk Category: Medium Risk ✓
+- Credit Score: 620 >= 650? No, but still qualifies for Loan Offer
+→ Standard segment, moderate savings, acceptable risk profile
+→ Good candidate for Loan Offer Campaign
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 2
+
+================================================================================
+RUN 8: PRODUCT BILLING - WITH DELIVERY APPLIED
+================================================================================
+
+============================================================
+FEATURE 2: PRODUCT BILLING CALCULATOR
+============================================================
+
+------------------------------------------------------------
+ENTER PRODUCT DETAILS
+------------------------------------------------------------
+Enter product name: T-Shirt Bundle
+Available categories: Electronics, Clothing, Food, Home, Sports, Books, Other
+Enter product category: Clothing
+Enter quantity (units): 10
+Enter unit price (₹): 299
+Enter discount percentage (0-100): 15
+Enter GST percentage: 12
+Enter delivery charge (₹): 150
+
+--- PRODUCT DETAILS ---
+Product Name: T-Shirt Bundle
+Category: Clothing
+Quantity: 10
+Unit Price: ₹299.00
+
+--- BILLING CALCULATION ---
+Gross Amount: ₹2,990.00
+Discount (15%): ₹448.50
+Amount After Discount: ₹2,541.50
+GST (12%): ₹304.98
+Delivery Charge: ₹150.00
+Final Payable Amount: ₹2,996.48
+
+[NOTE: Delivery charge APPLIED because amount before delivery (₹2,846.48) 
+is less than ₹5,000 threshold]
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 1
+
+================================================================================
+RUN 9: INPUT VALIDATION DEMONSTRATION
+================================================================================
+
+============================================================
+FEATURE 1: CUSTOMER PROFILE AND FINANCIAL SUMMARY
+============================================================
+
+------------------------------------------------------------
+ENTER CUSTOMER DETAILS
+------------------------------------------------------------
+Enter customer name: Test User
+
+[INVALID INPUT TEST - Negative Age]
+Enter age (years): -5
+Error: Age cannot be negative
+Enter age (years): 45
+
+[VALID INPUT ACCEPTED]
+
+Enter city: Mumbai
+Enter monthly income (₹): -10000
+Error: Monthly income cannot be negative
+Enter monthly income (₹): 65000
+
+[VALID INPUT ACCEPTED]
+
+Enter monthly expenses (₹): 42000
+Enter existing EMI amount (₹): 15000
+
+[INVALID INPUT TEST - Credit Score Out of Range]
+Enter credit score (300-900): 950
+Error: Credit score must be between 300 and 900
+Enter credit score (300-900): 700
+
+[VALID INPUT ACCEPTED]
+
+Available segments: Standard, Premium, Enterprise
+Enter customer segment (Standard/Premium/Enterprise): Gold
+Error: Segment must be one of ['Standard', 'Premium', 'Enterprise']
+Enter customer segment (Standard/Premium/Enterprise): Standard
+
+[VALID INPUT ACCEPTED]
+
+--- CUSTOMER DETAILS ---
+Name: Test User
+Age: 45
+City: Mumbai
+Monthly Income: ₹65,000.00
+Monthly Expenses: ₹42,000.00
+Existing EMI: ₹15,000.00
+Credit Score: 700
+Customer Segment: Standard
+
+--- FINANCIAL SUMMARY ---
+Monthly Savings: ₹23,000.00
+Savings Percentage: 35.38%
+EMI-to-Income Ratio: 23.08%
+Risk Category: Low Risk
+Customer Value Category: Medium Value
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 2
+
+[INVALID INPUT TEST - Invalid Discount Percentage]
+
+============================================================
+FEATURE 2: PRODUCT BILLING CALCULATOR
+============================================================
+
+------------------------------------------------------------
+ENTER PRODUCT DETAILS
+------------------------------------------------------------
+Enter product name: Sample Product
+Available categories: Electronics, Clothing, Food, Home, Sports, Books, Other
+Enter product category: Electronics
+Enter quantity (units): 0
+Error: Quantity must be greater than 0
+Enter quantity (units): 5
+
+Enter unit price (₹): 1000
+Enter discount percentage (0-100): 150
+Error: Discount must be between 0 and 100
+Enter discount percentage (0-100): 10
+
+[VALID INPUT ACCEPTED]
+
+Enter GST percentage: 18
+Enter delivery charge (₹): 100
+
+--- PRODUCT DETAILS ---
+Product Name: Sample Product
+Category: Electronics
+Quantity: 5
+Unit Price: ₹1,000.00
+
+--- BILLING CALCULATION ---
+Gross Amount: ₹5,000.00
+Discount (10%): ₹500.00
+Amount After Discount: ₹4,500.00
+GST (18%): ₹810.00
+Delivery Charge: ₹100.00
+Final Payable Amount: ₹5,410.00
+
+============================================================
+
+------------------------------------------------------------
+MAIN MENU
+------------------------------------------------------------
+1. Customer Profile & Financial Summary
+2. Product Billing Calculator
+3. Loan Eligibility Decision
+4. Campaign Eligibility Checker
+5. Exit
+------------------------------------------------------------
+
+Enter your choice (1-5): 5
+
+============================================================
+Thank you for using Business Rules Engine!
+============================================================
+
+================================================================================
+SAMPLE OUTPUT SUMMARY
+================================================================================
+
+This sample run demonstrates:
+
+✓ Feature 1: Customer Profile & Financial Summary
+  - Customer details collection with validation
+  - Financial metrics calculation (savings, EMI ratio)
+  - Risk category determination (Low, Medium, High)
+  - Customer value assessment (High, Medium, Low)
+
+✓ Feature 2: Product Billing Calculator
+  - Product details input with validation
+  - Complex billing calculations (discount, GST, delivery)
+  - Smart delivery charge logic (waived when amount > ₹5,000)
+  - Multiple scenarios tested
+
+✓ Feature 3: Loan Eligibility Decision
+  - Loan eligibility evaluation
+  - Three decision types: Approved, Rejected, Manual Review
+  - Detailed reasoning for each decision
+  - Age, income, credit score, EMI, savings validation
+
+✓ Feature 4: Campaign Eligibility
+  - Campaign assignment based on customer profile
+  - Four campaign types: Premium Upsell, Loan Offer, Cashback, No Campaign
+  - Reasoning explanation for each assignment
+
+✓ Feature 5: Input Validation
+  - Invalid age handling
+  - Negative income rejection
+  - Credit score range validation
+  - Invalid segment detection
+  - Quantity validation (must be > 0)
+  - Discount percentage bounds (0-100%)
+  - Error messages and re-prompting
+
+✓ Menu-Driven Interface
+  - Clean menu navigation
+  - Multiple feature access
+  - Graceful exit handling
+  - Error recovery
+
+================================================================================
+END OF SAMPLE OUTPUT
+================================================================================
+
+Date: 2024
+Application: Business Rules Engine - Part 1
+Student: Satyam Jaiswal
+Student ID: rotman_ds_2601001
