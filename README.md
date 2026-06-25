@@ -4,7 +4,7 @@
 
 **Student Name:** Satyam Jaiswal  
 **Student ID:** rotman_ds_2601001  
-**Repository:** satyam_jaiswal_rotman_ds_2601001_part1_python_business_rules  
+**Repository:** satyamaiswal_rotman_ds_2601001_part1_python_business_rules  
 **Part:** Part 1 - Python Business Rules Engine  
 **Total Marks:** 25
 
@@ -518,4 +518,4 @@ For issues or clarifications, refer to the test cases and sample output in this 
 
 ---
 
-**Last Updated:** Jume 2026
+**Last Updated:** June 2026
