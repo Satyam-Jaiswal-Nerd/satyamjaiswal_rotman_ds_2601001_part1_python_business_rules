@@ -513,11 +513,9 @@ Enter discount percentage (0-100): 10
 
 - **Student:** Satyam Jaiswal
 - **Student ID:** rotman_ds_2601001
-- **Course:** Capstone Project
 
 For issues or clarifications, refer to the test cases and sample output in this repository.
 
 ---
 
-**Last Updated:** 2024  
-**Repository:** satyam_jaiswal_rotman_ds_2601001_part1_python_business_rules
+**Last Updated:** Jume 2026
